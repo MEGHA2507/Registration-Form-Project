@@ -1,0 +1,118 @@
+:root {
+  --success--color: rgb(5, 204, 72);
+  --error--color: crimson;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: rgb(243, 215, 243);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+.form-container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(5, 5, 5, 0.3);
+  width: 40%;
+}
+
+.form {
+  padding: 30px;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+  color: rebeccapurple;
+}
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 1px solid rebeccapurple;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+.form-control input:focus {
+  outline: 0;
+  border-color: rgb(174, 48, 238);
+}
+.form-control.success input {
+  border-color: var(--success--color);
+}
+.form-control.error input {
+  border-color: var(--error--color);
+}
+.form-control span {
+  color: var(--error--color);
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  visibility: hidden;
+}
+.form-control.error span {
+  visibility: visible;
+}
+.error {
+  border-color: var(--error--color);
+  visibility: visible;
+}
+.form button {
+  cursor: pointer;
+  background-color: rebeccapurple;
+  border: 2px solid rebeccapurple;
+  border-radius: 30px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.form button:focus {
+  outline: 0;
+  border: 0;
+}
+
+.form button:hover {
+  background-color: rgb(147, 81, 212);
+  border: 2px solid rgb(147, 81, 212);
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .form-container {
+    width: 70%;
+  }
+  .form-control label,
+  .form-control input {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .form-container {
+    width: 50%;
+  }
+}

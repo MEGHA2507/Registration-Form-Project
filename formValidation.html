@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="formValidation.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <title>Form Validator</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="form" class="form">
+        <h2>Register With Us</h2>
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter Username" />
+          <span>Error message</span>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter Email" />
+          <span>Error message</span>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" />
+          <span>Error message</span>
+        </div>
+        <div class="form-control">
+          <label for="confirm-password">Confirm Password </label>
+          <input
+            type="password"
+            id="confirm-password"
+            placeholder="Enter Confirm Password"
+          />
+          <span>Error message</span>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="formValidation.js"></script>
+  </body>
+</html>
